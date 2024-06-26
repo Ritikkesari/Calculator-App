@@ -23,6 +23,26 @@ async def add_num(num1: int,num2: int):
     print(res)
     return {"result": res}
 
+@app.get("/subtract/{num1}/{num2}")
+async def sub_num(num1: int,num2: int):
+
+    res = subtract(num1,num2)
+    print(res)
+    return {"result": res}
+
+@app.get("/multiply/{num1}/{num2}")
+async def mul_num(num1: int,num2: int):
+
+    res = multiply(num1,num2)
+    print(res)
+    return {"result": res}
+
+@app.get("/divide/{num1}/{num2}")
+async def sub_num(num1: int,num2: int):
+
+    res = divide(num1,num2)
+    print(res)
+    return {"result": res}
 
 
 if __name__ == '__main__':
