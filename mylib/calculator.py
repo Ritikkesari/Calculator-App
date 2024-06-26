@@ -10,5 +10,5 @@ def multiply(a,b):
 def divide(a,b):
     return a/b
 
-def power(a,n):
+def power(a,n=2):
     return a**n
